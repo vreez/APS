@@ -7,17 +7,13 @@ const [T, ...arr] = fs.readFileSync('9012.txt').toString().split('\r\n');
 
 for (i = 0; i < T; i++) {
   const list = arr[i].split('')
-  // list.push(arr[i].split(''))
   const stack = [];
   var answer = true;
-  // const box = list;
   for (j = 0; j < list.length; j++) {
     if (list[j] === '(') {
       stack.push(list[j])
-      // box.splice(list[j], 1)
     } else if(stack.length > 0 && list[j] === ')') {
       stack.pop()
-      // box.splice(list[j], 1)
     } else if (stack.length === 0 && list[j] === ')') {
       var answer = false;
       break
