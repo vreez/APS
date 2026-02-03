@@ -1,0 +1,1 @@
+print("{}: {}".format("Animal", "Panda"))
