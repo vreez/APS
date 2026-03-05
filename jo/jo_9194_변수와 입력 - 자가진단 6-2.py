@@ -1,0 +1,5 @@
+des = input()
+t, d = input().split()
+print("Location: {}".format(des))
+print("Time: {} hours".format(int(t)))
+print("Distance: {} km".format(float(d)))
