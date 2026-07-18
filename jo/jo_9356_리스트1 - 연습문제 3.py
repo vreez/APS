@@ -1,0 +1,10 @@
+a = [1, 2, 3, 4, 5]
+print("last: {}".format(a[-1]))
+a.pop()
+print(a)
+print("len: {}".format(len(a)))
+print()
+print("second: {}".format(a[1]))
+a.pop(1)
+print(a)
+print("len: {}".format(len(a)))
