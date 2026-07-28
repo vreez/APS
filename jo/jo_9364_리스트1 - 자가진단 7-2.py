@@ -1,0 +1,6 @@
+arr = list(input().split())
+print(arr)
+arr.append(arr[1])
+arr.append(arr[2])
+arr.append(arr[1])
+print(arr)
